@@ -47,8 +47,8 @@ public record UserInfo(
     string Email,
     string Username,
     DateTimeOffset DOB,
-    int Age,
-    string Country
+    int Age/* ,
+    string Country */
 );
 
 /* write csv file EZ */
@@ -275,8 +275,8 @@ internal static class Program
                 user.Email,
                 user.Login.Username,
                 user.Dob.Date,
-                age,
-                user.Location.Country
+                age/* ,
+                user.Location.Country */
             );
             
             xformedUsers.Add(xformed);
